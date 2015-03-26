@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
 
   gem.require_paths = ["lib"]
 
-  gem.add_dependency 'motion-support'  # only used in RubyMotion version
+  gem.add_dependency 'motion-support', '~> 0.2.6'  # only used in RubyMotion version
 end

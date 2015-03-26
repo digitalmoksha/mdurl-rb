@@ -1,8 +1,10 @@
 # mdurl
 
+[![Gem Version](https://badge.fury.io/rb/mdurl-rb.svg)](http://badge.fury.io/rb/mdurl-rb)
+
 URL utilities for [motion-markdown-it](https://github.com/digitalmoksha/motion-markdown-it) parser, for both Ruby and RubyMotion
 
-This gem is a port of the [mdurl javascript package](https://github.com/markdown-it/mdurl) by Vitaly Puzrin and Alex Kocharin, that is used for the motion-markdown-it gem.
+This gem is a port of the [mdurl javascript package](https://github.com/markdown-it/mdurl) by Vitaly Puzrin and Alex Kocharin, that is used for the [markdown-it](https://github.com/markdown-it/markdown-it) package
 
 ## API
 
