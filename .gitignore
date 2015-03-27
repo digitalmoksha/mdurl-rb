@@ -1,2 +1,5 @@
 .DS_Store
 .repl_history
+rubymotion/build
+rubymotion/Gemfile.lock
+Gemfile.lock

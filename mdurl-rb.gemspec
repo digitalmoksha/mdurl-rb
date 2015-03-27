@@ -15,6 +15,4 @@ Gem::Specification.new do |gem|
   gem.test_files    = Dir.glob('spec/**/*.rb')
 
   gem.require_paths = ["lib"]
-
-  gem.add_dependency 'motion-support', '~> 0.2.6'  # only used in RubyMotion version
 end
