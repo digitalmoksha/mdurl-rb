@@ -6,8 +6,7 @@ if defined?(Motion::Project::Config)
   Motion::Project::App.setup do |app|
     app.files.unshift(Dir.glob(File.join(lib_dir_path, "mdurl-rb/**/*.rb")))
   end
-  
-  require 'motion-support'
+
 else
   
   require 'mdurl-rb/parse'
