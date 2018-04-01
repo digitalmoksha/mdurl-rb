@@ -12,7 +12,9 @@ Gem::Specification.new do |gem|
 
   gem.files         = Dir.glob('lib/**/*.rb')
   gem.files        << 'README.md'
-  gem.test_files    = Dir.glob('spec/**/*.rb')
+  gem.test_files    = Dir['spec/**/*.rb']
 
   gem.require_paths = ["lib"]
+
+  gem.add_development_dependency 'bacon-expect', '~> 1.0' # required for Travis build to work
 end

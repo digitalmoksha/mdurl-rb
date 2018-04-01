@@ -1,18 +1,18 @@
-# -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
 
 platform = ENV.fetch('platform', 'osx')
+testing = true if ARGV.join(' ') =~ /spec/
 
 require "motion/project/template/#{platform}"
 require 'rubygems'
 
-testing = true if ARGV.join(' ') =~ /spec/
-  
 begin
   require 'bundler'
   testing ? Bundler.require(:default, :spec) : Bundler.require
 rescue LoadError
 end
+
+require 'bacon-expect' if testing
 
 Motion::Project::App.setup do |app|
   app.name        = 'MDUrl'

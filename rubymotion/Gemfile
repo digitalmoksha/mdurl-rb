@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'bacon-expect'
-
-# gem 'mdurl-rb', path: '..', require: 'mdurl-rb'
 
 gemspec path: '..'
 
