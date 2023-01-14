@@ -89,7 +89,7 @@ module MDUrl
           end
 
           if ((b1 & 0xF8) == 0xF0 && (i + 9 < l))
-            # 111110xx 10xxxxxx 10xxxxxx 10xxxxxx
+            # 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
             b2 = seq.slice((i + 4)...(i + 6)).to_i(16)
             b3 = seq.slice((i + 7)...(i + 9)).to_i(16)
             b4 = seq.slice((i + 10)...(i + 12)).to_i(16)
